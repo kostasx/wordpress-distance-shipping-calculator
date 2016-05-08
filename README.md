@@ -4,6 +4,9 @@ Calculate shipping costs based on Zip codes of origin and destination
 # Prerequisites
 First, you'll need to get an API key from Google for the Geolocation and Distance Matrix APIs.
 
+# Installation
+Create a directory named `wordpress-distance-shipping-calculator` inside your `wp-content/plugins/` dir and upload the contents of this repository there.
+
 # Configuration
 * Paste your API key into the line `define('GOOGLE_API_KEY','<YOUR-API-KEY>');`
 * Update the `$cost_table` array according to the kilometer distances, e.g.
