@@ -32,7 +32,9 @@ function zip_code_to_place_id($zipCode,$region){
     $json_res = json_decode($response['body']);
     if ( $json_res->status == "OK" ){
       return $json_res->results[0]->place_id; // Address: $json_res->results[0]->formatted_address;
-    } 
+    } else {
+      die(var_dump($response));
+    }
   }
 
 }
@@ -51,7 +53,9 @@ function get_distance($origin_place_id, $destination_place_id){
       // Debugging:
       // update_option('zipcode_latest', $json_res->origin_addresses[0] . " -> " . $json_res->destination_addresses[0] );
       return $json_res->rows[0]->elements[0]->distance->value;  // Get distance in kilometers
-    } 
+    } else {
+      die(var_dump($response));
+    }
 
   }
 
