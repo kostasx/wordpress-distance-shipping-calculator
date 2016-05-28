@@ -1,3 +1,5 @@
+(Further development of this plugin has been moved [here](https://github.com/PlethoraLabs/wordpress-shipping-distance-calculator))
+
 # wordpress-distance-shipping-calculator
 Calculate shipping costs based on Zip codes of origin and destination
 
